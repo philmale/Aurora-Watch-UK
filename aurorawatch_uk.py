@@ -3,7 +3,8 @@
 AuroraWatch UK → Home Assistant command_line sensor helper.
 
 Fetches AuroraWatch UK's alerting-site activity feed (XML), extracts the most recent
-<activity> sample, and prints a single line of JSON for Home Assistant to ingest.
+<activity> sample, and prints a single line of JSON for Home Assistant to ingest as a 
+command_line sensor.
 """
 
 import json
