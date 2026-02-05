@@ -1,8 +1,9 @@
 # AuroraWatch UK – Home Assistant Command Line Sensor
 
-A minimal, production-ready Python helper for Home Assistant that polls the
+A minimal, production-ready Python script that polls the
 AuroraWatch UK **alerting-site activity** feed and exposes the latest
-magnetometer reading as a single HA sensor.
+magnetometer reading as a JSON object suitable for a Home Assistant
+command line sensor (or anything else that ingests JSON).
 
 Designed to be:
 - simple,
