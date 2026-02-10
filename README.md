@@ -1,15 +1,23 @@
-# AuroraWatch UK – Status Sensor
+# AuroraWatch UK – Status Report
 
 A minimal, production-ready Python script that polls the
 AuroraWatch UK **alerting-site activity** feed and exposes the latest
-magnetometer reading as a JSON object suitable for a Home Assistant
-command line sensor (or anything else that ingests JSON).
+magnetometer reading and alert status as a JSON object.
+Suitable for a Home Assistant command line sensor or anything else that ingests JSON.
 
 Designed to be:
 - simple,
 - robust,
 - dependency-free (stdlib only),
 - and suitable for long-term unattended use.
+
+## Credits
+
+The [AuroraWatch project](https://aurorawatch.lancs.ac.uk) is a fantastic project, a huge thanks
+to everyone involved there and credit to [Lancaster University](https://www.lancaster.ac.uk) for making
+this available for everyone to use.
+
+Here is where you can find a description of the [AuroraWatch API](https://aurorawatch.lancs.ac.uk/api-info/).
 
 ## What it does
 
@@ -118,8 +126,10 @@ No exceptions are raised into HA.
 
 ## Notes
 
-- This script uses the **official AuroraWatch UK XML API**.
+- This script uses the [AuroraWatch API](https://aurorawatch.lancs.ac.uk/api-info/).
 - AuroraWatch UK does not publish an officially supported Python SDK; this
   approach mirrors their documented usage pattern.
 - Polling every 5 minutes is well within reasonable usage for the service.
+- Written for the Home Assistant community.
+- Author [Phil Male](https://phil-male.com).
 
