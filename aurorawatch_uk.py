@@ -25,8 +25,8 @@ HDR = {
 
 # --------------------------------------
 
-# Helper: ISO8601 timestamp in UTC with trailing 'Z'
-now = lambda: datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+# Helper: ISO8601 timestamp in UTC in the same format as the feed's <datetime> values
+now = lambda: datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z")
 
 # Default payload (safe fallback)
 out = {
